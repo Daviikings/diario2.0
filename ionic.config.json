@@ -1,0 +1,7 @@
+{
+  "name": "diario2.0",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
