@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <!-- Añade un botón para volver atrás -->
+      <ion-back-button defaultHref="/menu/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let character of characters" [routerLink]="['/menu/perfil/', character.id]">
+      <ion-avatar slot="start">
+        <img [src]="character.image" alt="{{character.name}}">
+      </ion-avatar>
+      <ion-label>{{character.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
